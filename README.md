@@ -119,31 +119,17 @@ Developed by: M.PRAKASH.
 RegisterNumber: 22009001. 
 */
 
-module sr (q,qbar,s,r,clk);
-input s,r,clk;
-output q,qbar;
-wire nand1_out;
-wire nand2_out;
-nand(nand1_out,clk,s);
-nand(nand2_out,clk,r);
-nand(q,nand1_out,qbar);
-nand(qbar,nand2_out,q);
-endmodule
 
-
-PROGRAM 2:
-
-module jk(q,qbar,k,j,clk);
-input j,k,clk;
-output q,qbar;
-wire nand1_out;
-wire nand2_out;
-nand(nand1_out,j,clk,qbar);
-nand(nand2_out,k,clk,q);
-nand(q,nand1_out,qbar,qbar);
-nand(qbar,nand2_out,q);
-endmodule
-
+module sr (q,qbar,s,r,clk);   
+input s,r,clk;   
+output q,qbar;   
+wire nand1_out;   
+wire nand2_out;   
+nand(nand1_out,clk,s);   
+nand(nand2_out,clk,r);   
+nand(q,nand1_out,qbar);   
+nand(qbar,nand2_out,q);    
+endmodule    
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
@@ -156,12 +142,80 @@ endmodule
 
 ![image](https://user-images.githubusercontent.com/118350045/212722063-4f14aed8-a5fe-43eb-be97-4fa82fa843b4.png)
 
+### PROGRAM:2
+
+module ex5(j,k,clk,q,qbar);   
+input j,k,clk;    
+output q,qbar;   
+wire x,y;   
+nand(x,j,clk,qbar);   
+nand(y,k,clk,q);   
+nand(q,x,qbar);   
+nand(qbar,y,q);   
+endmodule  
+
+### RTL LOGIC FOR FLIPFLOPS
+
+![Screenshot_20230111_013335](https://user-images.githubusercontent.com/118350045/212723711-d002e25f-541f-4feb-9a6c-891be7416f1a.png)
 
 
 
+### TIMING DIGRAMS FOR FLIP FLOPS:
+
+![image](https://user-images.githubusercontent.com/118350045/212725948-6370ce32-dc7b-4e45-b32d-5c950d84bb70.png)
+
+
+### PROGRAM:3
+
+
+module d(q,qbar,d1,clk);
+input d1,clk;
+output q,qbar;
+wire n1;
+wire n2;
+not(x,d1);
+nand(n1,clk,d1);
+nand(n2,clk,x);
+nand(q,n2,qbar);
+nand(qbar,n1,q);
+endmodule 
+
+
+### RTL LOGIC FOR FLIPFLOPS:
+
+![image](https://user-images.githubusercontent.com/118350045/212726228-337914b3-77b4-4062-bb81-6dc0a9745d2b.png)
+
+
+### TIMING DIAGRAM:
+
+
+![image](https://user-images.githubusercontent.com/118350045/212726455-7776563f-b3e9-48af-95b6-5e732f09e68d.png)
+
+
+### PROGRM 4:
+
+module tff(t,qbar,q,clk);
+input t,clk;
+output q,qbar;
+wire n1,n2;
+nand(n1,t,clk,qbar);
+nand(n2,clk,t,q);
+nand(q,n1,qbar);
+nand(qbar,n2,q);
+endmodule  
+
+### RTL LOGIC FOR FLIPFLOPS:
+
+![image](https://user-images.githubusercontent.com/118350045/212726910-6025d5b4-ee22-4d04-8b8d-24ace79979d0.png)
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS:
+
+![image](https://user-images.githubusercontent.com/118350045/212727083-b9ec5706-4ec7-46b8-a4e1-dc123dc0b105.png)
 
 
 
 
 
 ### RESULTS 
+Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
