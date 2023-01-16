@@ -136,14 +136,11 @@ endmodule
 
 ![image](https://user-images.githubusercontent.com/118350045/212721922-c49cb631-f078-40fe-b6c6-45e5aa0c9b99.png)
 
-
-
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-
 ![image](https://user-images.githubusercontent.com/118350045/212722063-4f14aed8-a5fe-43eb-be97-4fa82fa843b4.png)
 
-### PROGRAM:2
 
+### PROGRAM:2
 module ex5(j,k,clk,q,qbar);   
 input j,k,clk;    
 output q,qbar;   
@@ -155,19 +152,13 @@ nand(qbar,y,q);
 endmodule  
 
 ### RTL LOGIC FOR FLIPFLOPS:
-
 ![Screenshot_20230111_013335](https://user-images.githubusercontent.com/118350045/212723711-d002e25f-541f-4feb-9a6c-891be7416f1a.png)
 
-
-
 ### TIMING DIGRAMS FOR FLIP FLOPS:
-
 ![image](https://user-images.githubusercontent.com/118350045/212725948-6370ce32-dc7b-4e45-b32d-5c950d84bb70.png)
 
 
 ### PROGRAM 3:
-
-
 module d(q,qbar,d1,clk);   
 input d1,clk;     
 output q,qbar;    
@@ -180,16 +171,12 @@ nand(q,n2,qbar);
 nand(qbar,n1,q);   
 endmodule     
 
-
 ### RTL LOGIC FOR FLIPFLOPS:
-
 ![image](https://user-images.githubusercontent.com/118350045/212726228-337914b3-77b4-4062-bb81-6dc0a9745d2b.png)
 
-
 ### TIMING DIAGRAM:
-
-
 ![image](https://user-images.githubusercontent.com/118350045/212726455-7776563f-b3e9-48af-95b6-5e732f09e68d.png)
+
 
 
 ### PROGRM 4:
@@ -206,7 +193,6 @@ endmodule
 
 ### RTL LOGIC FOR FLIPFLOPS:
 ![image](https://user-images.githubusercontent.com/118350045/212726910-6025d5b4-ee22-4d04-8b8d-24ace79979d0.png)
-
 
 ### TIMING DIGRAMS FOR FLIP FLOPS:
 ![image](https://user-images.githubusercontent.com/118350045/212727083-b9ec5706-4ec7-46b8-a4e1-dc123dc0b105.png)
