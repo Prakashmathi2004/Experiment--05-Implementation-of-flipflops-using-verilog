@@ -132,11 +132,10 @@ nand(qbar,nand2_out,q);
 endmodule    
 
 
-### RTL LOGIC FOR FLIPFLOPS 
+### RTL LOGIC FOR FLIPFLOPS: 
 ![image](https://user-images.githubusercontent.com/118350045/212721922-c49cb631-f078-40fe-b6c6-45e5aa0c9b99.png)
-### TIMING DIGRAMS FOR FLIP FLOPS 
+### TIMING DIGRAMS FOR FLIP FLOPS: 
 ![image](https://user-images.githubusercontent.com/118350045/212722063-4f14aed8-a5fe-43eb-be97-4fa82fa843b4.png)
-
 
 ### PROGRAM:2
 module ex5(j,k,clk,q,qbar);   
@@ -153,7 +152,6 @@ endmodule
 ![Screenshot_20230111_013335](https://user-images.githubusercontent.com/118350045/212723711-d002e25f-541f-4feb-9a6c-891be7416f1a.png)
 ### TIMING DIGRAMS FOR FLIP FLOPS:
 ![image](https://user-images.githubusercontent.com/118350045/212725948-6370ce32-dc7b-4e45-b32d-5c950d84bb70.png)
-
 
 ### PROGRAM 3:
 module d(q,qbar,d1,clk);   
@@ -174,9 +172,7 @@ endmodule
 ![image](https://user-images.githubusercontent.com/118350045/212726455-7776563f-b3e9-48af-95b6-5e732f09e68d.png)
 
 
-
 ### PROGRM 4:
-
 module tff(t,qbar,q,clk);   
 input t,clk;   
 output q,qbar;   
