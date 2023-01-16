@@ -115,8 +115,8 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ### PROGRAM :1
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: M.PRAKASH.
-RegisterNumber: 22009001. 
+Developed by: M.PRAKASH.   
+RegisterNumber: 22009001.     
 */
 
 
@@ -154,7 +154,7 @@ nand(q,x,qbar);
 nand(qbar,y,q);   
 endmodule  
 
-### RTL LOGIC FOR FLIPFLOPS
+### RTL LOGIC FOR FLIPFLOPS:
 
 ![Screenshot_20230111_013335](https://user-images.githubusercontent.com/118350045/212723711-d002e25f-541f-4feb-9a6c-891be7416f1a.png)
 
@@ -165,20 +165,20 @@ endmodule
 ![image](https://user-images.githubusercontent.com/118350045/212725948-6370ce32-dc7b-4e45-b32d-5c950d84bb70.png)
 
 
-### PROGRAM:3
+### PROGRAM 3:
 
 
-module d(q,qbar,d1,clk);
-input d1,clk;
-output q,qbar;
-wire n1;
-wire n2;
-not(x,d1);
-nand(n1,clk,d1);
-nand(n2,clk,x);
-nand(q,n2,qbar);
-nand(qbar,n1,q);
-endmodule 
+module d(q,qbar,d1,clk);   
+input d1,clk;     
+output q,qbar;    
+wire n1;    
+wire n2;   
+not(x,d1);   
+nand(n1,clk,d1);   
+nand(n2,clk,x);   
+nand(q,n2,qbar);   
+nand(qbar,n1,q);   
+endmodule     
 
 
 ### RTL LOGIC FOR FLIPFLOPS:
@@ -194,25 +194,22 @@ endmodule
 
 ### PROGRM 4:
 
-module tff(t,qbar,q,clk);
-input t,clk;
-output q,qbar;
-wire n1,n2;
-nand(n1,t,clk,qbar);
-nand(n2,clk,t,q);
-nand(q,n1,qbar);
-nand(qbar,n2,q);
-endmodule  
+module tff(t,qbar,q,clk);   
+input t,clk;   
+output q,qbar;   
+wire n1,n2;   
+nand(n1,t,clk,qbar);   
+nand(n2,clk,t,q);   
+nand(q,n1,qbar);  
+nand(qbar,n2,q);   
+endmodule     
 
 ### RTL LOGIC FOR FLIPFLOPS:
-
 ![image](https://user-images.githubusercontent.com/118350045/212726910-6025d5b4-ee22-4d04-8b8d-24ace79979d0.png)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS:
-
 ![image](https://user-images.githubusercontent.com/118350045/212727083-b9ec5706-4ec7-46b8-a4e1-dc123dc0b105.png)
-
 
 
 
