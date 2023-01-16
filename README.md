@@ -101,9 +101,8 @@ From the above characteristic table, we can directly write the next state equati
 Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
-### Procedure
-/* write all the steps invloved */ 
-1.Using nand gates and wires construct sr flip flop.
+### Procedure   
+1.Using nand gates and wires construct sr flip flop.   
 
 2.Repeat same steps to construct JK,D,T flipflops.
 
@@ -130,8 +129,6 @@ nand(nand2_out,clk,r);
 nand(q,nand1_out,qbar);   
 nand(qbar,nand2_out,q);    
 endmodule    
-
-
 ### RTL LOGIC FOR FLIPFLOPS: 
 ![image](https://user-images.githubusercontent.com/118350045/212721922-c49cb631-f078-40fe-b6c6-45e5aa0c9b99.png)
 ### TIMING DIGRAMS FOR FLIP FLOPS: 
@@ -147,7 +144,6 @@ nand(y,k,clk,q);
 nand(q,x,qbar);   
 nand(qbar,y,q);   
 endmodule  
-
 ### RTL LOGIC FOR FLIPFLOPS:
 ![Screenshot_20230111_013335](https://user-images.githubusercontent.com/118350045/212723711-d002e25f-541f-4feb-9a6c-891be7416f1a.png)
 ### TIMING DIGRAMS FOR FLIP FLOPS:
@@ -165,12 +161,10 @@ nand(n2,clk,x);
 nand(q,n2,qbar);   
 nand(qbar,n1,q);   
 endmodule     
-
 ### RTL LOGIC FOR FLIPFLOPS:
 ![image](https://user-images.githubusercontent.com/118350045/212726228-337914b3-77b4-4062-bb81-6dc0a9745d2b.png)
 ### TIMING DIAGRAM:
 ![image](https://user-images.githubusercontent.com/118350045/212726455-7776563f-b3e9-48af-95b6-5e732f09e68d.png)
-
 
 ### PROGRM 4:
 module tff(t,qbar,q,clk);   
@@ -182,7 +176,6 @@ nand(n2,clk,t,q);
 nand(q,n1,qbar);  
 nand(qbar,n2,q);   
 endmodule     
-
 ### RTL LOGIC FOR FLIPFLOPS:
 ![image](https://user-images.githubusercontent.com/118350045/212726910-6025d5b4-ee22-4d04-8b8d-24ace79979d0.png)
 ### TIMING DIGRAMS FOR FLIP FLOPS:
